@@ -30,8 +30,8 @@ impl Default for ChatApp {
         };
         println!("{}", uid);
 
-        let (mut reader_socket, _) = connect(Url::parse("ws://127.0.0.1:8080").unwrap()).expect("Can't connect");
-        let (mut writer_socket, _) = connect(Url::parse("ws://127.0.0.1:8080").unwrap()).expect("Can't connect");
+        let (mut reader_socket, _) = connect(Url::parse("ws://82.35.235.223:8080").unwrap()).expect("Can't connect");
+        let (mut writer_socket, _) = connect(Url::parse("ws://82.35.235.223:8080").unwrap()).expect("Can't connect");
 
         reader_socket.write_message(Message::Text(format!("{}r", uid))).unwrap();
         writer_socket.write_message(Message::Text(format!("{}w", uid))).unwrap();
