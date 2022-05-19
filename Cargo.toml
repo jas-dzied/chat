@@ -27,6 +27,7 @@ futures-util = { version = "0.3", default-features = false, features = ["sink", 
 futures-channel = "0.3"
 url = "*"
 rand = "*"
+base64 = "*"
 
 # native:
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
