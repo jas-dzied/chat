@@ -191,6 +191,7 @@ dependencies = [
  "console_error_panic_hook",
  "eframe",
  "egui",
+ "epaint",
  "futures-channel",
  "futures-util",
  "rand",
